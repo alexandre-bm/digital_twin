@@ -1,10 +1,9 @@
-name: CI Test
-
+name: CI Feature
 on:
   push:
-    branches: [ "test" ]
+    branches-ignore: [ "main", "dev", test" ]
   pull_request:
-    branches: [ "test" ]
+    branches-ignore: [ "main", "dev", "test"]
 
 permissions:
   contents: read
