@@ -33,7 +33,7 @@ jobs:
         key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
     - name: Install dependencies
       run: |
-        poetry install
+        poetry install  --no-root
     - name: Lint with ruff
       run: |
         poetry run ruff .
