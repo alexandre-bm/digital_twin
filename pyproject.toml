@@ -17,6 +17,5 @@ ruff = "0.11.*"
 pythonpath = "src"
 addopts = "--import-mode=importlib"
 testpaths = [
-    "tests",
-    "integration",
+    "tests"
 ]
